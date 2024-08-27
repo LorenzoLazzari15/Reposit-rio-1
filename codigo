@@ -1,0 +1,10 @@
+# Solicita informações sobre o animal
+nome = input("Digite o nome do animal: ")
+especie = input("Digite a espécie do animal: ")
+idade = input("Digite a idade do animal (em anos): ")
+
+# Exibe as informações do animal
+print("\nInformações do Animal:")
+print(f"Nome: {nome}")
+print(f"Espécie: {especie}")
+print(f"Idade: {idade} anos")
