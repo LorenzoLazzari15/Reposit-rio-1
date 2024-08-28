@@ -1,10 +1,73 @@
-# Solicita informações sobre o animal
-nome = input("Digite o nome do animal: ")
-especie = input("Digite a espécie do animal: ")
-idade = input("Digite a idade do animal (em anos): ")
+A linguagem de programação é um sistema formal que permite aos programadores criar programas por meio de um conjunto da mescla de palavras-chave, símbolos, termos e comandos. Dentro da linguagem de programação de alto nível, o Python se destaca. Ele tem alto potencial de integração com outras linguagens, uso otimizado em diferentes sistemas operacionais e a possibilidade de automação de comandos. O JavaScript, que integra a categoria de alto nível, é um dos modelos mais populares de linguagem de programação da atualidade. Prova disso é que ele compõe a estruturação da maioria dos navegadores que utilizamos para acessar à internet, como Mozilla, Chrome, Opera e Edge. Por fim, Swift é uma linguagem de programação de alto nível desenvolvida dentro da Apple. O objetivo é performance, aumento de recursos e qualidade de resposta dos programas utilizados pelos dispositivos eletrônicos da empresa.
 
-# Exibe as informações do animal
-print("\nInformações do Animal:")
-print(f"Nome: {nome}")
-print(f"Espécie: {especie}")
-print(f"Idade: {idade} anos")
+Exemplo de Código em Python: 
+class Gato:
+    def __init__(self, nome):
+        self.nome = nome
+        
+    def apresentacao(self):
+        print(f"{self.nome} é um gatinho siamês.")
+
+    def miar(self):
+        print(f"{self.nome} mia: Miau!")
+
+    def dormir(self):
+        print(f"{self.nome} quer leite.")
+
+# Comandos
+gato1 = Gato("Afonso")
+gato1.apresentacao()
+gato1.miar()
+gato1.dormir()
+
+Exemplo de Código em JavaScript:
+class Gato {
+  constructor(nome) {
+    this.nome = nome;
+  }
+    
+  apresenta() {
+    console.log(`Afonso é um gatinho siamês.`);
+  }
+    
+  miar() {
+    console.log(`${this.nome} diz: Miau!`);
+  }
+
+  fome() {
+    console.log(`${this.nome} quer leite.`);
+  }
+}
+
+// Uso do código
+const gato1 = new Gato('Afonso');
+gato1.apresenta();
+gato1.miar();
+gato1.fome();
+
+Exemplo de Código em Swift:
+class Gato {
+    var nome: String
+
+    init(nome: String) {
+        self.nome = nome
+    }
+
+    func miar() {
+        print("\(nome) diz: Miau!")
+    }
+
+    func fome() {
+        print("\(nome) quer leite.")
+    }
+
+    func apresenta() {
+        print("Afonso é um gatinho siamês.")
+    }
+}
+
+// Uso do código
+let gato1 = Gato(nome: "Afonso")
+gato1.apresenta()
+gato1.miar()
+gato1.fome()
