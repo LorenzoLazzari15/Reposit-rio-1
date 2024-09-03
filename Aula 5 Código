@@ -1,0 +1,4 @@
+gatos = ["Afonso", "Raimundo", "Pelé", "Neymar", "Leitinho"]
+
+for gato in gatos:
+    print(f"O gato {gato} ama beber leite!")
