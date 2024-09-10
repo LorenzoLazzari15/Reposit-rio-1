@@ -1,0 +1,8 @@
+def imprimir_vogais(texto):
+    vogais = "aeiouAEIOU"
+    resultado = [letra for letra in texto if letra in vogais]
+    print("".join(resultado))
+
+# Exemplo de uso
+frase = "Aqui é Flamengo!"
+imprimir_vogais(frase)
