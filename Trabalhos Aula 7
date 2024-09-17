@@ -1,0 +1,101 @@
+Exercício 1)
+
+print("Lorenzo", "Idade: 18", "Cidade: Rio de Janeiro", sep=" - ", end="!\n")
+
+
+Exercício 2)
+
+def calcular():
+    try:
+        # Solicita ao usuário o primeiro número
+        num1 = float(input("Digite o primeiro número: "))
+        # Solicita ao usuário o segundo número
+        num2 = float(input("Digite o segundo número: "))
+        # Solicita ao usuário a operação desejada
+        operacao = input("Digite a operação desejada ('+', '-', '*' ou '/'): ")
+
+        # Calcula o resultado com base na operação escolhida
+        if operacao == '+':
+            resultado = num1 + num2
+        elif operacao == '-':
+            resultado = num1 - num2
+        elif operacao == '*':
+            resultado = num1 * num2
+        elif operacao == '/':
+            # Verifica se o divisor é zero
+            if num2 == 0:
+                print("Erro: Divisão por zero não é permitida.")
+                return
+            resultado = num1 / num2
+        else:
+            print("Operação inválida.")
+            return
+
+        # Imprime o resultado
+        print(f"O resultado de {num1} {operacao} {num2} é {resultado}")
+
+    except ValueError:
+        print("Entrada inválida. Por favor, digite números válidos.")
+
+# Chama a função
+calcular()
+
+
+Exercício 3)
+
+def listar_compras():
+    # Solicita ao usuário para digitar os itens separados por vírgula
+    entrada = input("Digite os itens da lista de compras, separados por vírgula: ")
+    
+    # Divide a entrada em uma lista de itens, removendo espaços extras
+    lista_de_itens = [item.strip() for item in entrada.split(',')]
+    
+    # Imprime cada item em uma linha separada usando um laço
+    print("\nLista de Compras:")
+    for item in lista_de_itens:
+        print(item)
+
+# Chama a função
+listar_compras()
+
+
+Exercício 4)
+
+def celsius_para_fahrenheit():
+    try:
+        # Solicita ao usuário a temperatura em Celsius
+        celsius = float(input("Digite a temperatura em graus Celsius: "))
+        
+        # Converte a temperatura para Fahrenheit usando a fórmula
+        fahrenheit = (celsius * 9/5) + 32
+        
+        # Imprime o resultado
+        print(f"A temperatura em Fahrenheit é: {fahrenheit:.2f}")
+    
+    except ValueError:
+        print("Entrada inválida. Por favor, digite um número válido.")
+
+# Chama a função
+celsius_para_fahrenheit()
+
+
+Exercício 5)
+
+def coletar_nomes():
+    nomes = []  # Lista para armazenar os nomes
+    
+    while True:
+        nome = input("Digite um nome (ou 'sair' para encerrar): ").strip()
+        
+        if nome.lower() == 'sair':
+            break  # Sai do loop se o nome for 'sair'
+        
+        nomes.append(nome)  # Adiciona o nome à lista
+    
+    # Imprime todos os nomes em linhas separadas
+    print("\nNomes digitados:")
+    for nome in nomes:
+        print(nome)
+
+# Chama a função
+coletar_nomes()
